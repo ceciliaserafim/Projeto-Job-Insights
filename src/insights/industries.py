@@ -5,6 +5,7 @@ from .jobs import read
 def get_unique_industries(path: str) -> List[str]:
     data = read(path)
     lista_industry = [row["industry"] for row in data]
+    lista_industry = filter(None, lista_industry)
     return set(lista_industry)
 
 
