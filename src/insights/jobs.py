@@ -9,6 +9,8 @@ def read(path: str) -> List[Dict]:
         reader = csv.DictReader(file)
 
         return [dict(row) for row in reader]
+
+
 # list
 # List of rows as dicts
 
